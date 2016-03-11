@@ -467,6 +467,9 @@ a {
   #container #footer .footer-right {
     float: initial;
   }
+  #container .share_jia {
+    display: none;
+  }
 }
 .header-author {
   text-align: center;
