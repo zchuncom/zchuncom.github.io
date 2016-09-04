@@ -30,7 +30,7 @@ var kj1 = jz1 + 10;
 
 
 if(top.jz != jz1) {
-try{JS16.endtime(jz1);}catch(e){alert(e);}
+try{JsTest.endtime(jz1);}catch(e){alert(e);}
 //alert('½ØÖÁ:' + jz1 + "/s" + " " + '¿ª½±:' + kj1 + "/s");
 }
 
