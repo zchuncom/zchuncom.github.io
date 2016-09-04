@@ -31,7 +31,7 @@ var kj1 = jz1 + 10;
 
 if(top.jz != jz1) {
 try{JS16.endtime(jz1);}catch(e){}
-//console.log('截至:' + jz1 + "/s" + " " + '开奖:' + kj1 + "/s");
+alert('截至:' + jz1 + "/s" + " " + '开奖:' + kj1 + "/s");
 }
 
 top.jz = jz1;
