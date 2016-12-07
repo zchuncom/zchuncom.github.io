@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -191,6 +191,59 @@
 </nav>
 
       <div class="body-wrap">
+  
+    <article id="post-rabbitmq" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/11/15/rabbitmq/" class="article-date">
+  	<time datetime="2016-11-15T03:15:00.000Z" itemprop="datePublished">2016-11-15</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/15/rabbitmq/">RabbitMQ 权限</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="AMQP-操作到RabbitMQ权限的映射关系"><a href="#AMQP-操作到RabbitMQ权限的映射关系" class="headerlink" title="AMQP 操作到RabbitMQ权限的映射关系"></a>AMQP 操作到RabbitMQ权限的映射关系</h5><table><br>    <tr><br>        <th>AMQP命令</th><br>        <th>配置</th><br>        <th>读</th><br>        <th>写</th><br>    </tr><br>    <tr><br>        <td>exchange.declare</td><br>        <td>exchange</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>exchange.delete</td><br>        <td>exchange</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>queue.declare</td><br>        <td>queue</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>queue.delete</td><br>        <td>queue</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>queue.bind</td><br>        <td></td><br>        <td>queue</td><br>        <td>exchange</td><br>    </tr><br>    <tr><br>        <td>queue.publish</td><br>        <td></td><br>        <td>exchange</td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>basic.publish</td><br>        <td></td><br>        <td>exchange</td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>basic.get</td><br>        <td></td><br>        <td></td><br>        <td>queue</td><br>    </tr><br>    <tr><br>        <td>basic.consume</td><br>        <td></td><br>        <td></td><br>        <td>queue</td><br>    </tr><br>    <tr><br>        <td>basic.purge</td><br>        <td></td><br>        <td></td><br>        <td>queue</td><br>    </tr><br></table>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-setProcessInstAttributeBatch" class="article article-type-post" itemscope itemprop="blogPost">
   
