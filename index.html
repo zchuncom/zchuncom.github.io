@@ -195,8 +195,8 @@
     <article id="post-rabbitmq" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/15/rabbitmq/" class="article-date">
-  	<time datetime="2016-11-15T03:15:00.000Z" itemprop="datePublished">2016-11-15</time>
+      <a href="/2016/12/07/rabbitmq/" class="article-date">
+  	<time datetime="2016-12-07T03:15:00.000Z" itemprop="datePublished">2016-12-07</time>
 </a>
     </div>
   
@@ -209,7 +209,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/15/rabbitmq/">RabbitMQ 权限</a>
+      <a class="article-title" href="/2016/12/07/rabbitmq/">RabbitMQ 权限</a>
     </h1>
   
 
@@ -218,7 +218,77 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h5 id="AMQP-操作到RabbitMQ权限的映射关系"><a href="#AMQP-操作到RabbitMQ权限的映射关系" class="headerlink" title="AMQP 操作到RabbitMQ权限的映射关系"></a>AMQP 操作到RabbitMQ权限的映射关系</h5><table><br>    <tr><br>        <th>AMQP命令</th><br>        <th>配置</th><br>        <th>读</th><br>        <th>写</th><br>    </tr><br>    <tr><br>        <td>exchange.declare</td><br>        <td>exchange</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>exchange.delete</td><br>        <td>exchange</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>queue.declare</td><br>        <td>queue</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>queue.delete</td><br>        <td>queue</td><br>        <td></td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>queue.bind</td><br>        <td></td><br>        <td>queue</td><br>        <td>exchange</td><br>    </tr><br>    <tr><br>        <td>queue.publish</td><br>        <td></td><br>        <td>exchange</td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>basic.publish</td><br>        <td></td><br>        <td>exchange</td><br>        <td></td><br>    </tr><br>    <tr><br>        <td>basic.get</td><br>        <td></td><br>        <td></td><br>        <td>queue</td><br>    </tr><br>    <tr><br>        <td>basic.consume</td><br>        <td></td><br>        <td></td><br>        <td>queue</td><br>    </tr><br>    <tr><br>        <td>basic.purge</td><br>        <td></td><br>        <td></td><br>        <td>queue</td><br>    </tr><br></table>
+        
+##### AMQP 操作到RabbitMQ权限的映射关系
+
+<table>
+    <tr>
+        <th>AMQP命令</th>
+        <th>配置</th>
+        <th>读</th>
+        <th>写</th>
+    </tr>
+    <tr>
+        <td>exchange.declare</td>
+        <td>exchange</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>exchange.delete</td>
+        <td>exchange</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>queue.declare</td>
+        <td>queue</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>queue.delete</td>
+        <td>queue</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>queue.bind</td>
+        <td></td>
+        <td>queue</td>
+        <td>exchange</td>
+    </tr>
+    <tr>
+        <td>queue.publish</td>
+        <td></td>
+        <td>exchange</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>basic.publish</td>
+        <td></td>
+        <td>exchange</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>basic.get</td>
+        <td></td>
+        <td></td>
+        <td>queue</td>
+    </tr>
+    <tr>
+        <td>basic.consume</td>
+        <td></td>
+        <td></td>
+        <td>queue</td>
+    </tr>
+    <tr>
+        <td>basic.purge</td>
+        <td></td>
+        <td></td>
+        <td>queue</td>
+    </tr>
+</table>
 
       
     </div>
