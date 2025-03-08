@@ -258,7 +258,7 @@ class TradingCalculator {
                 });
         }
         if(localStorage.leverage) {
-            this.elements.leverage.value = data.leverage;
+            this.elements.leverage.value = localStorage.leverage;
         }
         this.debouncedCalculate();
     }
