@@ -241,30 +241,26 @@ class TradingCalculator {
         // 清空结果
         this.clearResults();
         // 清除存储数据
-        chrome.storage.local.clear();
+        localStorage.clear();
     }
 
-    // 保存用户设置到chrome.storage
+    // 保存用户设置到localStorage
     saveSettings() {
-        chrome.storage.local.set({
-            direction: this.currentDirection,
-            leverage: this.elements.leverage.value
-        });
+        localStorage.direction = this.currentDirection;
+        localStorage.leverage = this.elements.leverage.value;
     }
 
-    // 从chrome.storage加载用户设置
+    // 加载用户设置
     loadSettings() {
-        chrome.storage.local.get(['direction', 'leverage'], data => {
-            if (data.direction) {
-                this.elements.directionBtns.forEach(b => {
-                    b.classList.toggle('active', b.dataset.direction === data.direction);
+        if(localStorage.direction) {
+            this.elements.directionBtns.forEach(b => {
+                    b.classList.toggle('active', b.dataset.direction === localStorage.direction);
                 });
-            }
-            if (data.leverage) {
-                this.elements.leverage.value = data.leverage;
-            }
-            this.debouncedCalculate();
-        });
+        }
+        if(localStorage.leverage) {
+            this.elements.leverage.value = data.leverage;
+        }
+        this.debouncedCalculate();
     }
 }
 
