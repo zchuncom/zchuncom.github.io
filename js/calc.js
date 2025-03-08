@@ -251,6 +251,9 @@ class TradingCalculator {
         localStorage.change = this.elements.change.value;
         localStorage.entry = this.elements.entry.value;
         localStorage.exit = this.elements.exit.value;
+        localStorage.entryHistory = this.inputHistory.entry;
+        localStorage.exitHistory = this.inputHistory.exit;
+        localStorage.changeHistory = this.inputHistory.change;
     }
 
     // 加载用户设置
@@ -272,6 +275,16 @@ class TradingCalculator {
         if(localStorage.exit) {
             this.elements.exit.value = localStorage.exit;
         }
+        if(localStorage.entryHistory) {
+            this.inputHistory.entry = localStorage.entryHistory;
+        }
+        if(localStorage.exitHistory) {
+            this.inputHistory.exit = localStorage.exitHistory;
+        }
+        if(localStorage.changeHistory) {
+            this.inputHistory.change = localStorage.changeHistory;
+        }
+        
         this.debouncedCalculate();
     }
 }
