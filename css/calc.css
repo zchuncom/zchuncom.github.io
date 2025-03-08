@@ -1,0 +1,178 @@
+:root {
+    --primary: #2196F3;
+    --profit: #4CAF50;
+    --loss: #f44336;
+    --bg: #ffffff;
+    --text: #2d3436;
+    --border: #e0e0e0;
+    --surface: #f8f9fa;
+}
+
+body {
+    width: 360px;
+    padding: 5px;
+    font-family: 'Inter', sans-serif;
+    background: #f5f6fa;
+}
+
+.calculator {
+    background: var(--bg);
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+}
+
+.position-switcher {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    background: var(--surface);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+/* 在styles.css中添加以下修正 */
+.position-btn {
+    /* 确保按钮有明确的颜色继承 */
+    color: #94a3b8;
+    background: transparent;
+    /* 添加过渡效果 */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.position-btn.active {
+    /* 明确指定颜色而不是使用变量 */
+    background: #fff;
+    color: #2196F3;
+    /* 主色调蓝色 */
+    /* 增加阴影提升层次感 */
+    box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+    /* 强制覆盖可能冲突的样式 */
+    border-color: #e0f2fe !important;
+}
+
+/* 图标基础样式 */
+.position-btn svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+/* 激活状态图标动画 */
+.position-btn.active svg {
+    stroke: #2196F3;
+    transform: scale(1.1);
+    filter: drop-shadow(0 2px 4px rgba(33, 150, 243, 0.2));
+}
+
+/* 悬停效果 */
+.position-btn:not(.active):hover svg {
+    stroke: #64748b;
+    transform: translateY(-1px);
+}
+
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.875em;
+    color: #64748b;
+    font-weight: 500;
+}
+
+input {
+    width: 293px;
+    padding: 12px 16px;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    font-family: 'Space Mono', monospace;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.leverage-group::after {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.results {
+    background: var(--surface);
+    border-radius: 12px;
+    padding: 16px;
+    margin: 12px 0;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.result-label {
+    font-size: 0.875em;
+    color: #64748b;
+}
+
+.result-value {
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+}
+
+.actions {
+    margin-top: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-reset {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.btn-reset:hover {
+    background: #fee2e2;
+}
+
+.btn-reset svg {
+    fill: currentColor;
+}
+
+/* styles.css */
+.mode-display {
+    margin-top: 12px;
+    padding: 8px;
+    background: #f0f4ff;
+    border-radius: 6px;
+    font-size: 0.9em;
+    color: #2d3436;
+    text-align: center;
+}
