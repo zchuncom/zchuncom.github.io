@@ -28,10 +28,8 @@ body {
 
 /* 在styles.css中添加以下修正 */
 .position-btn {
-    /* 确保按钮有明确的颜色继承 */
-    color: #94a3b8;
-    background: transparent;
-    /* 添加过渡效果 */
+    color: #ffffff;
+    background: #5a585b;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -108,7 +106,7 @@ input:focus {
 }
 
 .results {
-    background: #080808;
+    background: #252525;
     border-radius: 12px;
     padding: 16px;
     margin: 12px 0;
