@@ -15,19 +15,14 @@ body {
 }
 
 .calculator {
-    background: var(--bg);
-    border-radius: 16px;
-    padding: 10px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
-    border: 1px solid var(--border);
 }
 
 .position-switcher {
     display: flex;
     gap: 8px;
     margin-bottom: 12px;
-    background: var(--surface);
-    padding: 8px;
+    background: #252525;
+    padding: 12px;
     border-radius: 12px;
 }
 
@@ -74,7 +69,7 @@ body {
 
 
 .input-group {
-    margin-bottom: 10px;
+    margin-bottom: 22px;
 }
 
 .input-group label {
@@ -86,13 +81,15 @@ body {
 }
 
 input {
-    width: 293px;
-    padding: 12px 16px;
-    border: 2px solid var(--border);
+    width: 336px;
+    padding: 12px;
+    border: 2px solid #101010;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.3s ease;
     font-family: 'Space Mono', monospace;
+    background: #414141cc;
+    color: #ffffff;
 }
 
 input:focus {
@@ -111,7 +108,7 @@ input:focus {
 }
 
 .results {
-    background: var(--surface);
+    background: #080808;
     border-radius: 12px;
     padding: 16px;
     margin: 12px 0;
@@ -126,7 +123,7 @@ input:focus {
 
 .result-label {
     font-size: 0.875em;
-    color: #64748b;
+    color: #ffffff;
 }
 
 .result-value {
@@ -168,10 +165,10 @@ button {
 /* styles.css */
 .mode-display {
     margin-top: 12px;
-    padding: 8px;
-    background: #f0f4ff;
+    padding: 12px;
+    background: #333333;
     border-radius: 6px;
     font-size: 0.9em;
-    color: #2d3436;
+    color: #ffffff;
     text-align: center;
 }
