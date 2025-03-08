@@ -86,7 +86,7 @@ input {
     font-size: 16px;
     transition: all 0.3s ease;
     font-family: 'Space Mono', monospace;
-    background: #414141cc;
+    background: #252525;
     color: #ffffff;
 }
 
@@ -164,7 +164,7 @@ button {
 .mode-display {
     margin-top: 12px;
     padding: 12px;
-    background: #333333;
+    background: #252525;
     border-radius: 6px;
     font-size: 0.9em;
     color: #ffffff;
