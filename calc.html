@@ -3,7 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 核心 iOS 配置 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes"> <!-- 全屏模式 -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- 状态栏黑色 -->
+
+  <!-- iOS 主屏幕图标 -->
+  <link rel="apple-touch-icon" href="icons/ios-icon-180x180.png">
+
+  <!-- iOS 启动画面（至少一个尺寸） -->
+  <link rel="apple-touch-startup-image" 
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+        href="splash/ios-launch-1125x2436.png">
+  
   <title>交易计算器</title>
   <link rel="stylesheet" href="/css/calc.css">
 </head>
