@@ -249,6 +249,8 @@ class TradingCalculator {
         localStorage.direction = this.currentDirection;
         localStorage.leverage = this.elements.leverage.value;
         localStorage.change = this.elements.change.value;
+        localStorage.entry = this.elements.entry.value;
+        localStorage.exit = this.elements.exit.value;
     }
 
     // 加载用户设置
@@ -263,6 +265,12 @@ class TradingCalculator {
         }
         if(localStorage.change) {
             this.elements.change.value = localStorage.change;
+        }
+        if(localStorage.entry) {
+            this.elements.entry.value = localStorage.entry;
+        }
+        if(localStorage.exit) {
+            this.elements.exit.value = localStorage.exit;
         }
         this.debouncedCalculate();
     }
